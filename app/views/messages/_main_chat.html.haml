@@ -1,0 +1,38 @@
+.chat-main
+  .chat-main__group-info
+    .chat-main__left-box
+      .left-box__current-group
+        test
+      .left-box__member-list
+        Member: Mai
+    .chat-main__edit-btn
+      = link_to "#" do
+        edit
+  .chat-main__message-list
+    .chat-main__message
+      .chat-main__header
+        .chat-main__message-name
+          Mai
+        .chat-main__message-date
+          2020/05/10(Sun) 12:00:57
+      .chat-main__message-text
+        ひとつめ
+    .chat-main__message
+      .chat-main__header
+        .chat-main__message-name
+          Mai
+        .chat-main__message-date
+          2020/05/10(Sun) 12:00:57
+      .chat-main__message-text
+        ふたつめ
+  .chat-main__message-form
+    .message-form__left-box
+      .left-box__input-message
+        type a message
+      .left-box__icon-image
+        %label{class: "left-box__icon-image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "left-box__icon-file"}
+        .left-box__icon-file
+    .message-form__send-box
+      send
