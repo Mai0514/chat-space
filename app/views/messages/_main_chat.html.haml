@@ -4,6 +4,7 @@
       .left-box__current-group
         =@group.name
       .left-box__member-list
+        Member:
         = @group.users.pluck(:name).join(',')
     .chat-main__edit-btn
       = link_to edit_group_path(@group), class: "edit-btn" do
